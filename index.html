@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Color Guessing Game</h1>
+            <div id="color-display" class="color-box"></div>
+            <p>Enter BGR values to guess the color:</p>
+            <form id="guess-form">
+                <div class="input-group">
+                    <label for="b-value">B:</label>
+                    <input type="number" id="b-value" name="b-value" min="0" max="255">
+                </div>
+                <div class="input-group">
+                    <label for="g-value">G:</label>
+                    <input type="number" id="g-value" name="g-value" min="0" max="255">
+                </div>
+                <div class="input-group">
+                    <label for="r-value">R:</label>
+                    <input type="number" id="r-value" name="r-value" min="0" max="255">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="user-color-display" class="color-box"></div>
+            <p id="result"></p>
+            <div class="stats">
+                <p>Time taken: <span id="time-taken">0</span> seconds</p>
+                <p>Number of attempts: <span id="attempts">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
